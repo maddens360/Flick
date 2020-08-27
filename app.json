@@ -17,7 +17,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier":"com.evanbacon.FlickMobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"

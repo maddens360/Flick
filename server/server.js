@@ -18,6 +18,7 @@ const con = mysql.createConnection({
 const port_ = process.env.port || 5000;
 
 const server = app.listen(port_, function(){
+    console.log('wazzapppp');
     const host = server.address().address
     const port = server.address().port
 });

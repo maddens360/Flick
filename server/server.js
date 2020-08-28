@@ -15,10 +15,16 @@ const con = mysql.createConnection({
     database:'score_ranking'
 });
 
-const server = app.listen(5000, function(){
+const port_ = process.env.port || 5000;
+
+const server = app.listen(port_, function(){
     const host = server.address().address
     const port = server.address().port
 });
+// const server = app.listen(5000, function(){
+//     const host = server.address().address
+//     const port = server.address().port
+// });
 
 con.connect(function(error){
     if(error) console.log(error);

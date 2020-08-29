@@ -15,7 +15,7 @@ const con = mysql.createConnection({
     database:'score_ranking'
 });
 
-const port_ = process.env.port || 5000;
+const port_ = process.env.PORT || 5000;
 console.log(port_);
 
 const server = app.listen(port_, function(){

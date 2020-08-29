@@ -145,7 +145,6 @@ export default function App() {
 
         setLeastScore(users[99].score);
       }
-      console.log(leastScore);
     }
     else return;
   }
@@ -311,7 +310,6 @@ export default function App() {
   useEffect(()=>{
     fetchData();
     setTypable(data.hiragana);
-    console.log(scoreData);
     // axios(options)
     //   .then((res) => {
     //     // let country = res.data.converted;
@@ -328,8 +326,7 @@ export default function App() {
       //     setCapital(json.capital);
       //   })
   },[])
-
-  console.log(startScreen)
+  
   return (
     <>
     <Start startScreen={startScreen} toFalseStartScreen={toFalseStartScreen}/>

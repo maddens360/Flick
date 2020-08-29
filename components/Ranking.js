@@ -76,22 +76,6 @@ const Ranking = (props) => {
     //     props.fetchData();
     // }
 
-    const scrollBtn = () => {
-        // if(Array.length >= dynamicIndex){
-        //     scrollview_ref.scrollTo({
-        //         x:0,
-        //         y:arr[dynamicIndex],
-        //         animated:true,
-        //     });
-        // }else{console.log('nope')}
-        
-        scrollview_ref.scrollTo({
-            x:0,
-            y:arr[props.dataLength-1],
-            animated:true,
-        });
-
-    }
     // useEffect(() => {
     //     // console.log(scoreData[4].score);
     //     // if(props.score && props.score>scoreData[4].score){
@@ -185,7 +169,6 @@ const Ranking = (props) => {
                         </ScrollView>
                         <View style={{marginBottom:15+'%'}}>
                         <Button title='戻る' onPress={hideRanking}/>
-                        <Button title='scroll' onPress={scrollBtn}/>
                         </View>
                     </View>
                 </Modal>

@@ -16,6 +16,7 @@ const con = mysql.createConnection({
 });
 
 const port_ = process.env.port || 5000;
+console.log(port_);
 
 const server = app.listen(port_, function(){
     console.log('wazzapppp');
